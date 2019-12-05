@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2019年12月02日 星期一 | Hello Biiu.me</title>
+    <meta name="description" content="biiu.me 个人博客">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.e3a3c5ae.css" as="style"><link rel="preload" href="/assets/js/app.22a2930b.js" as="script"><link rel="preload" href="/assets/js/2.958d95d6.js" as="script"><link rel="preload" href="/assets/js/10.4f826c63.js" as="script"><link rel="prefetch" href="/assets/js/11.34ac6529.js"><link rel="prefetch" href="/assets/js/12.c5d7d73a.js"><link rel="prefetch" href="/assets/js/3.637a2434.js"><link rel="prefetch" href="/assets/js/4.fcf0a2ca.js"><link rel="prefetch" href="/assets/js/5.85f70e41.js"><link rel="prefetch" href="/assets/js/6.82d1fdd1.js"><link rel="prefetch" href="/assets/js/7.d1809fbd.js"><link rel="prefetch" href="/assets/js/8.a5a9633b.js"><link rel="prefetch" href="/assets/js/9.5f7c82b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e3a3c5ae.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container custom-page-class"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello Biiu.me</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>开发笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note-work/2019-12-02.html" class="active sidebar-link">2019年12月02日 星期一</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><blockquote><p>迁移管理端项目,接口已经有了,新加入导出 excel 功能,尝试使用前端来导出:</p></blockquote> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> content <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&quot;id&quot;,&quot;number&quot;,&quot;string&quot;,&quot;smile&quot;
+&quot;11&quot;,&quot;111&quot;,&quot;ssd&quot;,&quot;嘿嘿&quot;
+&quot;22&quot;,&quot;222&quot;,&quot;kk&quot;,&quot;哈哈&quot;
+&quot;33&quot;,&quot;333&quot;,&quot;sf&quot;,&quot;呵呵&quot;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">loadFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> aLink <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> blob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span><span class="token punctuation">[</span>content<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment">// 这里传入数组</span>
+        type<span class="token punctuation">:</span> <span class="token string">'text/plain'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    aLink<span class="token punctuation">.</span>download <span class="token operator">=</span> <span class="token string">'test.csv'</span><span class="token punctuation">;</span>
+    aLink<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    aLink<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">revokeObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.22a2930b.js" defer></script><script src="/assets/js/2.958d95d6.js" defer></script><script src="/assets/js/10.4f826c63.js" defer></script>
+  </body>
+</html>
